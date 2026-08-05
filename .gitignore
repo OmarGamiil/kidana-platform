@@ -1,0 +1,296 @@
+# ==================================================
+# Kidana Platform - Git Ignore
+# Laravel 13 + Vue 3 + Inertia.js 3 + TypeScript
+# Tailwind CSS 4 + MySQL + Pest + Vite
+# ==================================================
+
+# ==================================================
+# PHP & JavaScript Dependencies
+# ==================================================
+/vendor/
+/node_modules/
+composer.phar
+
+# ==================================================
+# Environment Files, Credentials & Secrets
+# ==================================================
+/.env
+/.env.*
+!/.env.example
+
+/auth.json
+/.envrc
+/.direnv/
+
+/secrets/
+/credentials/
+/private/
+
+# Local authentication / registry credentials
+/.npmrc.local
+/.yarnrc.local
+/.pnpmrc.local
+
+# ==================================================
+# Laravel Cache & Generated Runtime Files
+# ==================================================
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
+/bootstrap/ssr/
+
+/storage/*.key
+/storage/pail/
+/storage/debugbar/
+/storage/clockwork/
+
+# ==================================================
+# Laravel Storage
+# ==================================================
+/storage/app/*
+!/storage/app/.gitignore
+!/storage/app/public/
+!/storage/app/private/
+
+/storage/app/public/*
+!/storage/app/public/.gitignore
+
+/storage/app/private/*
+!/storage/app/private/.gitignore
+
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# ==================================================
+# Frontend Build & Development Files
+# ==================================================
+/public/build/
+/public/hot
+/public/storage
+/public/fonts-manifest.dev.json
+/public/ssr-manifest.json
+
+/.vite/
+/.turbo/
+/.parcel-cache/
+/.eslintcache
+/.stylelintcache
+/.rollup.cache/
+
+# ==================================================
+# Laravel Wayfinder Generated Files
+# ==================================================
+/resources/js/actions/
+/resources/js/routes/
+/resources/js/wayfinder/
+
+# ==================================================
+# Local Databases
+# ==================================================
+*.sqlite
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
+
+/database/*.sqlite
+/database/*.sqlite-journal
+/database/*.sqlite-shm
+/database/*.sqlite-wal
+
+# ==================================================
+# Database Backups & Dumps
+# ==================================================
+/backup/
+/backups/
+/dumps/
+
+/database/backups/
+/database/dumps/
+
+/*.sql
+/*.dump
+/*.bak
+
+/database/*.sql
+/database/*.dump
+/database/*.bak
+
+*.sql.gz
+*.dump.gz
+*.bak.gz
+
+# ==================================================
+# Temporary Tests
+# Permanent tests belong in the repository.
+# Only temporary test files are ignored.
+# ==================================================
+/tests/Temporary/
+/tests/_temporary/
+/tests/tmp/
+
+# ==================================================
+# Test Results, Static Analysis & Coverage
+# ==================================================
+/.phpunit.cache/
+/.phpunit.result.cache
+/.phpstan.cache/
+/.php-cs-fixer.cache
+/.pint.cache
+/.psalm-cache/
+/.phpbench/
+/infection.log
+
+/coverage/
+/test-results/
+/playwright-report/
+/blob-report/
+/cypress/screenshots/
+/cypress/videos/
+
+# ==================================================
+# Logs, Cache & Temporary Files
+# ==================================================
+*.log
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*.pid
+*~
+
+/tmp/
+/temp/
+/.cache/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==================================================
+# IDE & Code Editor Files
+# ==================================================
+/.idea/
+/.vscode/
+/.fleet/
+/.nova/
+/.zed/
+/.windsurf/
+/.history/
+
+/.phpactor/
+.phpactor.json
+
+/.laravel-idea/
+/.phpstorm.meta.php
+/_ide_helper.php
+/_ide_helper_models.php
+/_ide_helper_*.php
+
+*.iml
+*.code-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ntvs*
+*.njsproj
+*.sln
+
+# ==================================================
+# Laravel Boost & AI Agents
+# Keep shared project instructions tracked:
+# .agents/, .claude/, .codex/, .cursor/,
+# AGENTS.md, CLAUDE.md, boost.json and .mcp.json
+# Ignore local-only settings and caches.
+# ==================================================
+/.agents/cache/
+/.claude/cache/
+/.codex/cache/
+/.cursor/cache/
+/.opencode/cache/
+
+/.claude/settings.local.json
+/.codex/settings.local.json
+/.cursor/settings.local.json
+/.opencode/settings.local.json
+/.mcp.local.json
+
+# ==================================================
+# Operating System Files
+# ==================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==================================================
+# Local Development Configuration
+# ==================================================
+Homestead.json
+Homestead.yaml
+docker-compose.override.yml
+compose.override.yml
+
+/.docker/
+/.sail/
+/.wamp/
+/laragon/
+
+# ==================================================
+# Deployment & Hosting Local State
+# ==================================================
+/.vercel/
+/.netlify/
+/.wrangler/
+/serverless/
+
+# ==================================================
+# Security Keys, Certificates & Private Material
+# ==================================================
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.key
+*.csr
+
+/certificates/private/
+/certs/private/
+
+# ==================================================
+# Keep Required Placeholder Files
+# ==================================================
+!/.env.example
+
+!/bootstrap/cache/.gitignore
+
+!/storage/app/.gitignore
+!/storage/app/public/.gitignore
+!/storage/app/private/.gitignore
+
+!/storage/framework/cache/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/testing/.gitignore
+!/storage/framework/views/.gitignore
+
+!/storage/logs/.gitignore
