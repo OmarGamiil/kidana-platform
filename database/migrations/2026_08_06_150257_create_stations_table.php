@@ -1,0 +1,39 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('stations', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('office_season_id')->constrained()->cascadeOnDelete();
+            $table->string('track');
+            $table->foreignId('city_id')->constrained()->restrictOnDelete();
+            $table->string('name');
+            $table->boolean('is_completed')->default(false);
+            $table->timestamp('completed_at')->nullable();
+            // Backs the "required this week" dashboard list.
+            $table->date('due_at')->nullable();
+            $table->timestamps();
+
+            $table->index(['office_season_id', 'is_completed']);
+            $table->index(['office_season_id', 'due_at']);
+            $table->index(['office_season_id', 'track', 'city_id']);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('stations');
+    }
+};

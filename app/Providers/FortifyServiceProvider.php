@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Actions\Auth\AuthenticatePlatformUserAction;
 use App\Actions\Fortify\ResetUserPassword;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
@@ -39,6 +40,11 @@ class FortifyServiceProvider extends ServiceProvider
     private function configureActions(): void
     {
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
+
+        // The closure is responsible for the FULL credential check (lookup +
+        // password verification), per Fortify's own contract — not just lookup.
+        Fortify::authenticateUsing(fn (Request $request) => app(AuthenticatePlatformUserAction::class)
+            ->handle((string) $request->input('email'), (string) $request->input('password')));
     }
 
     /**
@@ -46,7 +52,7 @@ class FortifyServiceProvider extends ServiceProvider
      */
     private function configureViews(): void
     {
-        Fortify::loginView(fn (Request $request) => Inertia::render('auth/Login', [
+        Fortify::loginView(fn (Request $request) => Inertia::render('office/Login', [
             'canResetPassword' => Features::enabled(Features::resetPasswords()),
             'status' => $request->session()->get('status'),
         ]));

@@ -11,4 +11,6 @@ export type NavItem = {
     href: NonNullable<InertiaLinkProps['href']>;
     icon?: LucideIcon;
     isActive?: boolean;
+    /** Defaults to true. Set false for nav items shown but not yet built. */
+    enabled?: boolean;
 };
