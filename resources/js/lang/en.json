@@ -1,0 +1,164 @@
+{
+    "common": {
+        "language": "Language",
+        "arabic": "عربي",
+        "english": "English",
+        "back_to_website": "Back to website",
+        "contact_support": "Contact support"
+    },
+    "auth": {
+        "login": {
+            "title": "Sign in",
+            "identifier_label": "Email or delegate number",
+            "password_label": "Password",
+            "remember_me": "Remember me",
+            "forgot_password": "Forgot your password?",
+            "submit": "Sign in"
+        }
+    },
+    "marketing": {
+        "nav": {
+            "login": "Sign in"
+        },
+        "hero": {
+            "title": "Kidana Hajz Digital Platform",
+            "subtitle": "Specialized services for the Hajj sector — track your office's readiness step by step, with one dashboard covering every operational track.",
+            "cta_primary": "Request a quote",
+            "cta_secondary": "View the basic package"
+        },
+        "stats": {
+            "stations": "seasonal stations",
+            "tracks": "operational tracks",
+            "stages": "stages"
+        },
+        "why": {
+            "title": "Why subscribe to Kidana?",
+            "body": "An instant dashboard for decision makers, with live tracking of every track's readiness throughout the season."
+        },
+        "tracks": {
+            "title": "Specialized services for the Hajj sector",
+            "camps": "Camps",
+            "housing": "Housing",
+            "catering": "Catering",
+            "transport": "Transport"
+        },
+        "package": {
+            "title": "The Basic Package",
+            "description": "One package covering everything your office needs this season."
+        },
+        "how_it_works": {
+            "title": "How does Kidana Hajz work during the season?"
+        },
+        "dashboard_preview": {
+            "title": "An instant dashboard for decision makers"
+        },
+        "final_cta": {
+            "title": "Start season 1448H now",
+            "cta": "Request a quote"
+        },
+        "free_account": {
+            "title": "Free knowledge account",
+            "description": "Get the season timeline, a business plan template, and the latest news — this request does not create an account automatically; the Kidana team reviews it and sends an official invite.",
+            "cta": "Request a knowledge account"
+        },
+        "footer": {
+            "tagline": "Kidana Hajz's digital platform for specialized Hajj-sector services.",
+            "audiences": {
+                "office": "Hajj Affairs Office",
+                "service_provider": "Service Provider Company",
+                "kidana_team": "Kidana Team",
+                "ministry": "Ministry of Hajj and Umrah"
+            },
+            "copyright": "© Kidana Hajz. All rights reserved."
+        }
+    },
+    "access": {
+        "title": "Access Portal",
+        "subtitle": "Choose which party you belong to, to continue",
+        "support": "Contact support",
+        "roles": {
+            "office": {
+                "title": "Hajj Affairs Office",
+                "description": "Track your season's readiness and manage your office's work plan.",
+                "badge": "Basic account",
+                "action": "Enter office workspace"
+            },
+            "service_provider": {
+                "title": "Service Provider Company",
+                "description": "The service provider portal for managing offers and projects.",
+                "badge": "Phase Two",
+                "action": "Coming soon"
+            },
+            "kidana_team": {
+                "title": "Kidana Hajz Team",
+                "description": "Sign in for Kidana's internal operations team.",
+                "action": "Enter Kidana admin"
+            }
+        }
+    },
+    "activation": {
+        "steps": {
+            "account": "Account details",
+            "verify": "Verify",
+            "password": "Create password"
+        },
+        "account": {
+            "title": "Activate your Hajj Affairs Office invitation",
+            "subtitle": "Enter your office's details to receive a verification code.",
+            "mobile_number_label": "Office mobile number",
+            "official_email_label": "Office official email",
+            "terms_label": "I agree to the terms and conditions for this request",
+            "submit": "Continue and send verification code"
+        },
+        "verify": {
+            "title": "Verify your login code",
+            "subtitle": "We sent a temporary code to your mobile number ending in {hint}",
+            "resend_label": "Didn't receive the code?",
+            "resend_action": "Resend",
+            "resend_countdown": "Resend in {seconds}",
+            "submit": "Verify and continue",
+            "debug_code_notice": "(dev mode) Code: {code}"
+        },
+        "password": {
+            "title": "Create your password",
+            "subtitle": "Choose a strong password to protect the office account.",
+            "password_label": "New password",
+            "password_confirmation_label": "Confirm password",
+            "submit": "Complete activation and sign in"
+        }
+    },
+    "dashboard": {
+        "welcome": "Welcome, {office}",
+        "season": "Season {season}",
+        "work_plan": {
+            "title": "Complete the season work plan",
+            "stations_progress": "{completed} of {total} stations complete",
+            "cta": "Continue work plan"
+        },
+        "stats": {
+            "pending_reports": "reports pending review",
+            "open_observations": "open observations",
+            "stations_completed": "stations completed",
+            "season_readiness": "season readiness"
+        },
+        "weekly_tasks": {
+            "title": "Required this week",
+            "empty": "No tasks due this week"
+        },
+        "readiness": {
+            "title": "Core tracks readiness"
+        },
+        "activity": {
+            "title": "Recent updates",
+            "empty": "No activity yet",
+            "user.logged_in": "Logged in",
+            "user.logged_out": "Logged out",
+            "activation.completed": "Account activated"
+        },
+        "certificate": {
+            "title": "Completion certificate",
+            "description": "All administrative requirements and documents must be completed to issue the completion certificate.",
+            "cta": "View certificate requirements"
+        }
+    }
+}
