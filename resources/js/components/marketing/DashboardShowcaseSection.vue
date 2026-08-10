@@ -24,7 +24,7 @@ const benefits = [
                 </p>
             </div>
             <div
-                class="mt-12 grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]"
+                class="mt-12 grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]"
             >
                 <div class="order-2 lg:order-2">
                     <DashboardMarketingPreview />

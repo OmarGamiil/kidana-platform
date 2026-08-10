@@ -13,14 +13,14 @@ const capabilities = [
 </script>
 
 <template>
-    <section id="capabilities" class="bg-white py-16 lg:py-20">
+    <section id="capabilities" class="bg-white py-16 lg:py-[4.5rem]">
         <div class="mx-auto max-w-7xl px-6 xl:px-8">
             <h2
                 class="mx-auto max-w-3xl text-center text-2xl leading-relaxed font-bold text-marketing-teal-dark lg:text-3xl"
             >
                 {{ t('marketing.capabilities.title') }}
             </h2>
-            <div class="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5">
+            <div class="mt-9 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5">
                 <MarketingCapabilityCard
                     v-for="capability in capabilities"
                     :key="capability.key"

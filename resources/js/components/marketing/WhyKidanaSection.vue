@@ -22,7 +22,7 @@ const certificateItems = ['requirements', 'tracking', 'documentation'];
             </div>
 
             <div
-                class="mt-12 grid items-stretch gap-6 lg:grid-cols-[1fr_1.08fr]"
+                class="mt-12 grid items-stretch gap-6 lg:grid-cols-[1.08fr_1fr]"
             >
                 <div class="order-2 grid gap-5">
                     <article

@@ -11,7 +11,7 @@ const { t } = useI18n();
 <template>
     <section class="overflow-hidden bg-marketing-cream">
         <div
-            class="mx-auto grid max-w-7xl items-center gap-14 px-6 py-16 lg:grid-cols-[0.98fr_1.02fr] lg:py-20 xl:gap-20 xl:px-8"
+            class="mx-auto grid max-w-7xl items-center gap-14 px-6 py-16 lg:grid-cols-[0.94fr_1.06fr] lg:py-[5.5rem] xl:gap-16 xl:px-8"
         >
             <div class="order-2">
                 <HeroDashboardPreview />
@@ -24,7 +24,7 @@ const { t } = useI18n();
                     {{ t('marketing.hero.eyebrow') }}
                 </div>
                 <h1
-                    class="mt-7 text-[clamp(2.5rem,4.15vw,4rem)] leading-[1.17] font-bold tracking-tight text-marketing-teal-dark"
+                    class="mt-7 text-[clamp(2.5rem,4vw,3.75rem)] leading-[1.16] font-bold tracking-tight text-marketing-teal-dark"
                 >
                     <span class="block">{{
                         t('marketing.hero.title_line_one')
