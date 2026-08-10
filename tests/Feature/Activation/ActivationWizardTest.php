@@ -9,6 +9,7 @@ use App\Models\Season;
 use App\Models\User;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+use Inertia\Testing\AssertableInertia as Assert;
 
 /**
  * Creates a PendingActivation office/season + invite, and returns both the
@@ -221,6 +222,17 @@ test('the password step rejects being reached before otp verification', function
     completeAccountStep();
 
     test()->get(route('activation.password.show'))->assertRedirect(route('home'));
+});
+
+test('the password step exposes the active server password policy', function () {
+    $code = completeAccountStep();
+    test()->post(route('activation.verify.store'), ['code' => $code]);
+
+    test()->get(route('activation.password.show'))
+        ->assertOk()
+        ->assertInertia(fn (Assert $page) => $page
+            ->component('office/activation/Password')
+            ->where('passwordRules', 'minlength: 8;'));
 });
 
 test('full happy path: account -> otp -> password activates the office and logs the user in', function () {

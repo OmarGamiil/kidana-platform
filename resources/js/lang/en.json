@@ -9,22 +9,235 @@
     "auth": {
         "login": {
             "title": "Sign in",
+            "office_badge": "Hajj Affairs Office",
+            "description": "Enter your approved delegate credentials to access the office workspace.",
             "identifier_label": "Email or delegate number",
+            "identifier_placeholder": "Enter your email or delegate number",
             "password_label": "Password",
             "remember_me": "Remember me",
             "forgot_password": "Forgot your password?",
-            "submit": "Sign in"
+            "submit": "Sign in",
+            "processing": "Signing in...",
+            "information": {
+                "badge": "Hajj Affairs Office",
+                "title": "Your season's work, in view.\nFrom your first sign-in.",
+                "description": "One place to follow the business plan, readiness, notes, and reports throughout the season.",
+                "benefits": {
+                    "workspace": "Unlimited access within the system",
+                    "permissions": "Permissions defined for every employee role",
+                    "audit": "An audit trail for every sign-in and action"
+                },
+                "languages": "Available in Arabic and English",
+                "language_values": "العربية • English"
+            },
+            "preview": {
+                "title": "Hajj Affairs Office workspace",
+                "season": "Season 1448H",
+                "metrics": {
+                    "readiness": "Readiness",
+                    "tracks": "Operational tracks",
+                    "stations": "Season stations"
+                }
+            }
+        },
+        "password_visibility": {
+            "show": "Show password",
+            "hide": "Hide password"
         }
     },
     "marketing": {
         "nav": {
-            "login": "Sign in"
+            "label": "Main navigation",
+            "home": "Home",
+            "what_we_offer": "What Kidana Hajz offers",
+            "how_it_works": "How it works",
+            "services": "Services",
+            "readiness": "Readiness assessment",
+            "knowledge": "Knowledge center",
+            "login": "Platform login",
+            "quote": "Request a quote"
         },
+        "brand_alt": "Kidana Hajz",
         "hero": {
-            "title": "Kidana Hajz Digital Platform",
-            "subtitle": "Specialized services for the Hajj sector — track your office's readiness step by step, with one dashboard covering every operational track.",
+            "page_title": "Kidana Hajz Digital Platform",
+            "eyebrow": "A unified digital journey for Hajj affairs offices",
+            "title_line_one": "From planning",
+            "title_line_two": "to readiness.",
+            "subtitle": "Consulting, supervision, compliance, and management of Hajj office operational plans across camps, housing, catering, and transport — all in one platform.",
             "cta_primary": "Request a quote",
-            "cta_secondary": "View the basic package"
+            "cta_secondary": "Explore the Basic Package",
+            "supporting_line": "Business plan • Field supervision • Audit-ready reports"
+        },
+        "preview": {
+            "season": "Season 1448H",
+            "title": "Office readiness dashboard",
+            "status": "Live tracking",
+            "readiness": "Overall season readiness",
+            "updated": "Updated moments ago",
+            "on_track": "On track",
+            "metrics": {
+                "stations": "stations complete",
+                "tracks": "operational tracks",
+                "reports": "verified reports"
+            },
+            "next_step": "Next milestone",
+            "field_review": "Field readiness review",
+            "scheduled": "Scheduled and confirmed",
+            "compliance": "Compliance score",
+            "compliance_note": "All critical requirements are covered"
+        },
+        "capabilities": {
+            "title": "Everything a Hajj affairs office needs in one digital journey",
+            "stations": "stations in the season business plan",
+            "tracks": "integrated operational tracks",
+            "stages": "stages from study to handover",
+            "languages_value": "Two languages",
+            "languages": "Arabic — English"
+        },
+        "why_kidana": {
+            "title": "Why do Hajj affairs offices subscribe to Kidana Hajz?",
+            "subtitle": "A professional platform that strengthens readiness and gives your team a clearer season-wide view.",
+            "mobile": {
+                "title": "Live mobile tracking",
+                "body": "Track office readiness and key alerts wherever you are through a clear, fast interface.",
+                "readiness": "Readiness",
+                "status": "Season on track"
+            },
+            "audit": {
+                "title": "One audit-ready reference",
+                "body": "Unified files and reports simplify reviews and document every step."
+            },
+            "compliance": {
+                "title": "Protect compliance points",
+                "body": "Early alerts and precise follow-up for critical requirements."
+            },
+            "certificate": {
+                "badge": "Certified completion journey",
+                "title": "Certificate of completion for ministry-required work",
+                "body": "Track seasonal requirements and document completion evidence through a clear journey that prepares your office for final review.",
+                "items": {
+                    "requirements": "Track every station through completion",
+                    "tracking": "Monitor observations and delays as they happen",
+                    "documentation": "Keep evidence and reports in one reference"
+                },
+                "cta": "Explore the completion journey"
+            }
+        },
+        "package_section": {
+            "badge": "An integrated package for a clearer season",
+            "title": "The Basic Package",
+            "body": "Integrated season management from study and planning through supervision, compliance, and documentation.",
+            "summary": "Consulting • Supervision • Compliance",
+            "cta": "Request package details",
+            "services": {
+                "camps": {
+                    "title": "Pilgrim camps",
+                    "tagline": "Integrated operational readiness",
+                    "body": "Track camp facilities and operating requirements through a measurable plan."
+                },
+                "housing": {
+                    "title": "Pilgrim housing",
+                    "tagline": "Readiness and compliance review",
+                    "body": "Review housing, essential services, observations, and corrective actions."
+                },
+                "catering": {
+                    "title": "Catering providers",
+                    "tagline": "Quality and continuity",
+                    "body": "Track catering readiness, quality indicators, and safe procedures throughout the season."
+                },
+                "transport": {
+                    "title": "Pilgrim transport",
+                    "tagline": "Operational coordination",
+                    "body": "Organize transport plans and monitor operating points and risks for smooth movement."
+                }
+            }
+        },
+        "workflow": {
+            "title": "How does Kidana Hajz work during the season?",
+            "subtitle": "One operating journey connecting planning, delivery, review, and completion.",
+            "steps": {
+                "study": {
+                    "title": "Study and review",
+                    "body": "Understand needs and audit the current position."
+                },
+                "planning": {
+                    "title": "Project planning",
+                    "body": "Build the work plan and assign responsibilities."
+                },
+                "inspection": {
+                    "title": "Field inspection",
+                    "body": "Verification visits and readiness documentation."
+                },
+                "remediation": {
+                    "title": "Remediation follow-up",
+                    "body": "Close observations and monitor improvements."
+                },
+                "operation": {
+                    "title": "Seasonal operation",
+                    "body": "Daily tracking of indicators and alerts."
+                },
+                "handover": {
+                    "title": "Handover and reports",
+                    "body": "Final reports and audit-ready evidence."
+                }
+            }
+        },
+        "dashboard": {
+            "title": "Your entire season in one dashboard",
+            "subtitle": "A connected work journey bringing tracking, alerts, and reports into one place.",
+            "eyebrow": "Continuous tracking from anywhere",
+            "headline": "Follow your office's work moment by moment from mobile.",
+            "body": "A unified view that helps your team know what is done, what needs intervention, and what is approaching its deadline.",
+            "benefits": {
+                "mobile": {
+                    "title": "Live mobile tracking",
+                    "body": "Readiness indicators are available to your team at any time."
+                },
+                "alerts": {
+                    "title": "Automatic delay alerts",
+                    "body": "Early notifications support timely action."
+                },
+                "reports": {
+                    "title": "Upload-ready reports",
+                    "body": "Consistent outputs simplify review and documentation."
+                }
+            },
+            "preview": {
+                "season": "Season 1448H",
+                "title": "Hajj affairs office readiness",
+                "status": "Season on track",
+                "metrics": {
+                    "readiness": "Readiness",
+                    "completed": "stations complete",
+                    "reports": "reports uploaded"
+                },
+                "chart": "Core track readiness",
+                "tracks": {
+                    "camps": "Camps",
+                    "housing": "Housing",
+                    "catering": "Catering",
+                    "transport": "Transport"
+                },
+                "activity": "Recent operations and follow-ups",
+                "activities": {
+                    "reviewed": "Camp operating plan review",
+                    "pending": "Catering documents completion",
+                    "complete": "Transport plan approval"
+                },
+                "activity_status": {
+                    "reviewed": "Reviewed",
+                    "pending": "In progress",
+                    "complete": "Complete"
+                }
+            }
+        },
+        "season_cta": {
+            "badge": "Early preparation for season 1448H",
+            "title": "Start season 1448H",
+            "emphasis": "with greater clarity",
+            "body": "Submit your request and let Kidana build an integrated readiness journey with you, from planning through completion.",
+            "primary": "Request the Basic Package",
+            "secondary": "Enter the Kidana platform"
         },
         "stats": {
             "stations": "seasonal stations",
@@ -63,6 +276,29 @@
         },
         "footer": {
             "tagline": "Kidana Hajz's digital platform for specialized Hajj-sector services.",
+            "label": "Footer navigation",
+            "season_line": "Clearer readiness for season 1448H",
+            "legal": "Privacy policy • Terms and conditions",
+            "groups": {
+                "platform": {
+                    "title": "Platform",
+                    "home": "Home",
+                    "services": "Services",
+                    "readiness": "Readiness assessment"
+                },
+                "season": {
+                    "title": "Season tracks",
+                    "planning": "Planning and review",
+                    "compliance": "Compliance and follow-up",
+                    "reports": "Reports and documentation"
+                },
+                "links": {
+                    "title": "Kidana links",
+                    "knowledge": "Knowledge center",
+                    "support": "Help and support",
+                    "contact": "Contact us"
+                }
+            },
             "audiences": {
                 "office": "Hajj Affairs Office",
                 "service_provider": "Service Provider Company",
@@ -73,19 +309,48 @@
         }
     },
     "access": {
-        "title": "Access Portal",
+        "title": "Choose your access point",
         "subtitle": "Choose which party you belong to, to continue",
         "support": "Contact support",
+        "intro": {
+            "badge": "Access and support",
+            "body": "Each organization has a dedicated workspace and permissions aligned with its seasonal responsibilities. Choose your organization to continue."
+        },
+        "help": {
+            "question": "Need help signing in or activating your account?",
+            "action": "Contact support"
+        },
+        "information": {
+            "badge": "Season 1448H platform",
+            "title": "One gateway.\nPermissions for every organization.",
+            "body": "Kidana brings seasonal work into one space, with a clear access experience for every organization based on its role and responsibilities.",
+            "benefits": {
+                "readiness": "Track readiness and observations as they happen",
+                "reports": "Access reports, evidence, and handover records",
+                "permissions": "Tailored permissions and a complete action history"
+            }
+        },
+        "preview": {
+            "title": "Decision-maker dashboard",
+            "live": "Live",
+            "readiness": "Overall readiness",
+            "status": "On track",
+            "metrics": {
+                "stations": "season stations",
+                "stages": "operating stages",
+                "reports": "reports complete"
+            }
+        },
         "roles": {
             "office": {
                 "title": "Hajj Affairs Office",
                 "description": "Track your season's readiness and manage your office's work plan.",
-                "badge": "Basic account",
+                "badge": "Primary journey",
                 "action": "Enter office workspace"
             },
             "service_provider": {
                 "title": "Service Provider Company",
-                "description": "The service provider portal for managing offers and projects.",
+                "description": "For companies and operational service providers managing offers and projects.",
                 "badge": "Phase Two",
                 "action": "Coming soon"
             },
@@ -98,33 +363,82 @@
     },
     "activation": {
         "steps": {
+            "label": "Account activation steps",
             "account": "Account details",
-            "verify": "Verify",
+            "verify": "Verification code",
             "password": "Create password"
         },
         "account": {
             "title": "Activate your Hajj Affairs Office invitation",
-            "subtitle": "Enter your office's details to receive a verification code.",
+            "badge": "First-time activation",
+            "subtitle": "Use the official invitation sent by Kidana to activate the office account and access its workspace.",
+            "alert": "This is an official invitation linked to the office. The contact details must match the approved delegate's records.",
+            "invitation_reference_label": "Office invitation reference",
             "mobile_number_label": "Office mobile number",
+            "mobile_number_placeholder": "Enter the approved mobile number",
             "official_email_label": "Office official email",
-            "terms_label": "I agree to the terms and conditions for this request",
-            "submit": "Continue and send verification code"
+            "official_email_placeholder": "Enter the approved email address",
+            "terms_label": "I confirm that I am the approved office delegate and agree to the activation terms",
+            "submit": "Continue and send verification code",
+            "processing": "Verifying details...",
+            "back_to_login": "Back to sign in",
+            "information": {
+                "badge": "Office account activation",
+                "title": "An official invitation from Kidana Hajz.\nSecure office activation.",
+                "description": "Kidana sent an official invitation to the registered office delegate to begin a secure, data-matched activation journey.",
+                "benefits": {
+                    "secure": "Secure activation matched to office records",
+                    "delegate": "Permissions linked to the approved delegate",
+                    "audit": "An audit trail for every step and action"
+                },
+                "languages": "Available in Arabic and English",
+                "language_values": "العربية • English"
+            }
         },
         "verify": {
             "title": "Verify your login code",
             "subtitle": "We sent a temporary code to your mobile number ending in {hint}",
+            "code_label": "Enter the six-digit verification code",
             "resend_label": "Didn't receive the code?",
             "resend_action": "Resend",
             "resend_countdown": "Resend in {seconds}",
+            "resending": "Resending...",
             "submit": "Verify and continue",
+            "processing": "Verifying...",
+            "edit_activation": "Edit activation details",
+            "information": {
+                "title": "Quick verification.\nSecure access to the season.",
+                "description": "A temporary verification code protects the office account before password creation and activation completion.",
+                "benefits": {
+                    "secure": "Secure activation matched to office records",
+                    "permissions": "Defined permissions for every employee",
+                    "audit": "An audit trail for every sign-in and action"
+                }
+            },
             "debug_code_notice": "(dev mode) Code: {code}"
         },
         "password": {
             "title": "Create your password",
-            "subtitle": "Choose a strong password to protect the office account.",
+            "subtitle": "Choose a strong password to protect the Hajj Affairs Office permissions.",
             "password_label": "New password",
+            "password_placeholder": "Enter your new password",
             "password_confirmation_label": "Confirm password",
-            "submit": "Complete activation and sign in"
+            "password_confirmation_placeholder": "Re-enter your password",
+            "requirements": {
+                "title": "Password requirements",
+                "minimum": "At least {count} characters",
+                "mixed_case": "Uppercase and lowercase letters",
+                "letter": "At least one letter",
+                "number": "At least one number",
+                "symbol": "At least one special character"
+            },
+            "submit": "Complete activation and sign in",
+            "processing": "Completing activation...",
+            "back_to_verification": "Back to verification code",
+            "information": {
+                "title": "Your account is ready.\nStart managing the season.",
+                "description": "A secure password protects the office account and completes activation for access to the season workspace."
+            }
         }
     },
     "dashboard": {

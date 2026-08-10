@@ -1,7 +1,9 @@
 <?php
 
-test('returns a successful response', function () {
-    $response = $this->get(route('home'));
+use Inertia\Testing\AssertableInertia as Assert;
 
-    $response->assertOk();
+test('renders the marketing homepage', function () {
+    $this->get(route('home'))
+        ->assertSuccessful()
+        ->assertInertia(fn (Assert $page) => $page->component('marketing/Home'));
 });
