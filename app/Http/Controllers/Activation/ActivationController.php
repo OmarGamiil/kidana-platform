@@ -17,6 +17,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Illuminate\Validation\Rules\Password;
 use Inertia\Inertia;
 use Inertia\Response;
 
@@ -138,7 +139,9 @@ class ActivationController extends Controller
             return $this->redirectWithError($e);
         }
 
-        return Inertia::render('office/activation/Password');
+        return Inertia::render('office/activation/Password', [
+            'passwordRules' => Password::defaults()->toPasswordRulesString(),
+        ]);
     }
 
     public function storePassword(CreatePasswordRequest $request, CompleteActivationAction $action): RedirectResponse
