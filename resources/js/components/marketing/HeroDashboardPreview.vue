@@ -12,12 +12,12 @@ const metrics = [
 </script>
 
 <template>
-    <div class="relative isolate mx-auto w-full max-w-[570px]">
+    <div class="relative isolate mx-auto w-full max-w-[600px]">
         <div
             class="absolute -inset-5 -z-10 rounded-[2.25rem] bg-[radial-gradient(circle_at_15%_88%,var(--marketing-gold-soft),transparent_47%)] opacity-80"
         ></div>
         <div
-            class="overflow-hidden rounded-[1.75rem] bg-marketing-teal-dark p-5 shadow-xl shadow-marketing-teal-dark/15 sm:p-6"
+            class="min-h-[32rem] overflow-hidden rounded-[1.75rem] bg-marketing-teal-dark p-5 shadow-xl shadow-marketing-teal-dark/15 sm:p-7"
         >
             <div class="mb-5 flex items-center justify-between text-white">
                 <div>
