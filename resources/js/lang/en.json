@@ -280,19 +280,48 @@
         }
     },
     "access": {
-        "title": "Access Portal",
+        "title": "Choose your access point",
         "subtitle": "Choose which party you belong to, to continue",
         "support": "Contact support",
+        "intro": {
+            "badge": "Access and support",
+            "body": "Each organization has a dedicated workspace and permissions aligned with its seasonal responsibilities. Choose your organization to continue."
+        },
+        "help": {
+            "question": "Need help signing in or activating your account?",
+            "action": "Contact support"
+        },
+        "information": {
+            "badge": "Season 1448H platform",
+            "title": "One gateway.\nPermissions for every organization.",
+            "body": "Kidana brings seasonal work into one space, with a clear access experience for every organization based on its role and responsibilities.",
+            "benefits": {
+                "readiness": "Track readiness and observations as they happen",
+                "reports": "Access reports, evidence, and handover records",
+                "permissions": "Tailored permissions and a complete action history"
+            }
+        },
+        "preview": {
+            "title": "Decision-maker dashboard",
+            "live": "Live",
+            "readiness": "Overall readiness",
+            "status": "On track",
+            "metrics": {
+                "stations": "season stations",
+                "stages": "operating stages",
+                "reports": "reports complete"
+            }
+        },
         "roles": {
             "office": {
                 "title": "Hajj Affairs Office",
                 "description": "Track your season's readiness and manage your office's work plan.",
-                "badge": "Basic account",
+                "badge": "Primary journey",
                 "action": "Enter office workspace"
             },
             "service_provider": {
                 "title": "Service Provider Company",
-                "description": "The service provider portal for managing offers and projects.",
+                "description": "For companies and operational service providers managing offers and projects.",
                 "badge": "Phase Two",
                 "action": "Coming soon"
             },

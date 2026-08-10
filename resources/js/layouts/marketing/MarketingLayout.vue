@@ -8,8 +8,9 @@ import { access, home } from '@/routes';
 
 const { t } = useI18n();
 
-withDefaults(defineProps<{ homepage?: boolean }>(), {
+withDefaults(defineProps<{ homepage?: boolean; accessPage?: boolean }>(), {
     homepage: false,
+    accessPage: false,
 });
 
 const audienceLinks = [
@@ -24,7 +25,7 @@ const audienceLinks = [
     <div class="flex min-h-screen flex-col bg-background text-foreground">
         <MarketingHeader v-if="homepage" />
         <header
-            v-else
+            v-else-if="!accessPage"
             class="sticky top-0 z-20 border-b border-border bg-background/95 backdrop-blur"
         >
             <div
@@ -49,7 +50,10 @@ const audienceLinks = [
             <slot />
         </main>
 
-        <footer v-if="!homepage" class="border-t border-border bg-muted/30">
+        <footer
+            v-if="!homepage && !accessPage"
+            class="border-t border-border bg-muted/30"
+        >
             <div
                 class="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-4"
             >
