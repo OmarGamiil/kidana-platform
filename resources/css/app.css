@@ -64,6 +64,15 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+
+    --color-marketing-cream: var(--marketing-cream);
+    --color-marketing-teal: var(--marketing-teal);
+    --color-marketing-teal-dark: var(--marketing-teal-dark);
+    --color-marketing-gold: var(--marketing-gold);
+    --color-marketing-gold-soft: var(--marketing-gold-soft);
+    --color-marketing-surface: var(--marketing-surface);
+    --color-marketing-border: var(--marketing-border);
+    --color-marketing-muted: var(--marketing-muted);
 }
 
 /*
@@ -135,6 +144,14 @@
     --sidebar-border: hsl(0 0% 91%);
     --sidebar-ring: hsl(217.2 91.2% 59.8%);
     --sidebar: hsl(0 0% 98%);
+    --marketing-cream: #f8f4e8;
+    --marketing-teal: #006e78;
+    --marketing-teal-dark: #004951;
+    --marketing-gold: #d8b354;
+    --marketing-gold-soft: #f0e3bd;
+    --marketing-surface: #fbf9f2;
+    --marketing-border: #e5e5e5;
+    --marketing-muted: #5e6d6e;
 }
 
 .dark {
