@@ -9,11 +9,40 @@
     "auth": {
         "login": {
             "title": "Sign in",
+            "office_badge": "Hajj Affairs Office",
+            "description": "Enter your approved delegate credentials to access the office workspace.",
             "identifier_label": "Email or delegate number",
+            "identifier_placeholder": "Enter your email or delegate number",
             "password_label": "Password",
             "remember_me": "Remember me",
             "forgot_password": "Forgot your password?",
-            "submit": "Sign in"
+            "submit": "Sign in",
+            "processing": "Signing in...",
+            "information": {
+                "badge": "Hajj Affairs Office",
+                "title": "Your season's work, in view.\nFrom your first sign-in.",
+                "description": "One place to follow the business plan, readiness, notes, and reports throughout the season.",
+                "benefits": {
+                    "workspace": "Unlimited access within the system",
+                    "permissions": "Permissions defined for every employee role",
+                    "audit": "An audit trail for every sign-in and action"
+                },
+                "languages": "Available in Arabic and English",
+                "language_values": "العربية • English"
+            },
+            "preview": {
+                "title": "Hajj Affairs Office workspace",
+                "season": "Season 1448H",
+                "metrics": {
+                    "readiness": "Readiness",
+                    "tracks": "Operational tracks",
+                    "stations": "Season stations"
+                }
+            }
+        },
+        "password_visibility": {
+            "show": "Show password",
+            "hide": "Hide password"
         }
     },
     "marketing": {
@@ -334,33 +363,82 @@
     },
     "activation": {
         "steps": {
+            "label": "Account activation steps",
             "account": "Account details",
-            "verify": "Verify",
+            "verify": "Verification code",
             "password": "Create password"
         },
         "account": {
             "title": "Activate your Hajj Affairs Office invitation",
-            "subtitle": "Enter your office's details to receive a verification code.",
+            "badge": "First-time activation",
+            "subtitle": "Use the official invitation sent by Kidana to activate the office account and access its workspace.",
+            "alert": "This is an official invitation linked to the office. The contact details must match the approved delegate's records.",
+            "invitation_reference_label": "Office invitation reference",
             "mobile_number_label": "Office mobile number",
+            "mobile_number_placeholder": "Enter the approved mobile number",
             "official_email_label": "Office official email",
-            "terms_label": "I agree to the terms and conditions for this request",
-            "submit": "Continue and send verification code"
+            "official_email_placeholder": "Enter the approved email address",
+            "terms_label": "I confirm that I am the approved office delegate and agree to the activation terms",
+            "submit": "Continue and send verification code",
+            "processing": "Verifying details...",
+            "back_to_login": "Back to sign in",
+            "information": {
+                "badge": "Office account activation",
+                "title": "An official invitation from Kidana Hajz.\nSecure office activation.",
+                "description": "Kidana sent an official invitation to the registered office delegate to begin a secure, data-matched activation journey.",
+                "benefits": {
+                    "secure": "Secure activation matched to office records",
+                    "delegate": "Permissions linked to the approved delegate",
+                    "audit": "An audit trail for every step and action"
+                },
+                "languages": "Available in Arabic and English",
+                "language_values": "العربية • English"
+            }
         },
         "verify": {
             "title": "Verify your login code",
             "subtitle": "We sent a temporary code to your mobile number ending in {hint}",
+            "code_label": "Enter the six-digit verification code",
             "resend_label": "Didn't receive the code?",
             "resend_action": "Resend",
             "resend_countdown": "Resend in {seconds}",
+            "resending": "Resending...",
             "submit": "Verify and continue",
+            "processing": "Verifying...",
+            "edit_activation": "Edit activation details",
+            "information": {
+                "title": "Quick verification.\nSecure access to the season.",
+                "description": "A temporary verification code protects the office account before password creation and activation completion.",
+                "benefits": {
+                    "secure": "Secure activation matched to office records",
+                    "permissions": "Defined permissions for every employee",
+                    "audit": "An audit trail for every sign-in and action"
+                }
+            },
             "debug_code_notice": "(dev mode) Code: {code}"
         },
         "password": {
             "title": "Create your password",
-            "subtitle": "Choose a strong password to protect the office account.",
+            "subtitle": "Choose a strong password to protect the Hajj Affairs Office permissions.",
             "password_label": "New password",
+            "password_placeholder": "Enter your new password",
             "password_confirmation_label": "Confirm password",
-            "submit": "Complete activation and sign in"
+            "password_confirmation_placeholder": "Re-enter your password",
+            "requirements": {
+                "title": "Password requirements",
+                "minimum": "At least {count} characters",
+                "mixed_case": "Uppercase and lowercase letters",
+                "letter": "At least one letter",
+                "number": "At least one number",
+                "symbol": "At least one special character"
+            },
+            "submit": "Complete activation and sign in",
+            "processing": "Completing activation...",
+            "back_to_verification": "Back to verification code",
+            "information": {
+                "title": "Your account is ready.\nStart managing the season.",
+                "description": "A secure password protects the office account and completes activation for access to the season workspace."
+            }
         }
     },
     "dashboard": {
